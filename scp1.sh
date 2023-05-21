@@ -99,15 +99,15 @@ cat << EOF > /usr/local/etc/xray/config.json
         "settings": {
             "clients": [
                 {
-                 "password":"$UUID",
-                 "flow": "xtls-rprx-direct",
-				 "level": 0,
-				 "email": "$EMAIL"
+                "password":"$UUID",
+                "flow": "xtls-rprx-direct",
+		"level": 0,
+		"email": "$EMAIL"
                 }
             ],
             "fallbacks": [
                 {
-				 "dest": "80"
+		"dest": "80"
                 }
                  
             ]
@@ -121,10 +121,10 @@ cat << EOF > /usr/local/etc/xray/config.json
                     "h2"
                 ],
                 "certificates": [
-                    {
-                     "certificateFile": "/etc/xray/xray.crt",  
-                     "keyFile": "/etc/xray/xray.key"
-					}
+                	{
+                     	"certificateFile": "/etc/xray/xray.crt",  
+                     	"keyFile": "/etc/xray/xray.key"
+			}
                 ],
                 "minVersion": "1.3"
             }
