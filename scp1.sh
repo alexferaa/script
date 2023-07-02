@@ -155,8 +155,8 @@ EOF
 #accuring a ssl certificate (self-sigend openssl)
 
 mkdir /etc/xray
-cp xray.key /etc/xray/xray.key
-cp xray.crt /etc/xray/xray.crt
+cp private.key /etc/xray/xray.key
+cp cert.crt /etc/xray/xray.crt
 chmod 644 /etc/xray/xray.key
 
 #starting xray core on sytem startup
